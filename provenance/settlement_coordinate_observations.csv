@@ -1,0 +1,11 @@
+coordinate_observation_id,settlement_id,source_id,source_feature_id,observed_name,longitude,latitude,geometry_type,retrieved_utc,estimated_source_precision_m,offset_from_adopted_m,adoption_status,reason
+COORD-001,SET-001,SRC-006,,Kaniyan,44.86509135,38.30954776,secondary_registry_point,2026-10-23T11:30:00Z,250,0,adopted_baseline,Original published repository coordinate retained pending field or authoritative cartographic validation
+COORD-002,SET-001,SRC-013,OSM-node-3289951211,کانیان,44.8665525,38.3086371,place_node,2026-10-23T12:35:00Z,250,163,comparison_only,Independent OSM point broadly agrees but does not justify silently replacing the baseline
+COORD-003,SET-002,SRC-007,,Shurik,44.77357740,38.32044756,secondary_registry_point,2026-10-23T11:30:00Z,300,0,adopted_baseline,Original published repository coordinate retained
+COORD-004,SET-002,SRC-013,OSM-relation-16948911,شوریک,44.7751704,38.3186263,administrative_relation_centroid,2026-10-23T12:35:00Z,300,246,comparison_only,Relation centroid is not necessarily a settlement centre
+COORD-005,SET-003,SRC-008,,Silab,44.75957177,38.31635075,secondary_registry_point,2026-10-23T11:30:00Z,250,0,adopted_baseline,Original published repository coordinate retained
+COORD-006,SET-003,SRC-013,OSM-node-3289951222,سیلاب,44.7607723,38.3163872,place_node,2026-10-23T12:35:00Z,250,105,comparison_only,Independent OSM point broadly agrees
+COORD-007,SET-004,SRC-009,,Mafi Kandi,44.90521037,38.32262776,secondary_registry_point,2026-10-23T11:30:00Z,250,0,adopted_baseline,Original published repository coordinate retained
+COORD-008,SET-004,SRC-013,OSM-node-3289951214,مافی کندی,44.9062414,38.3212593,place_node,2026-10-23T12:35:00Z,250,177,comparison_only,Independent OSM point broadly agrees
+COORD-009,SET-005,SRC-010,,Shekeryazi,44.93916544,38.31021396,secondary_registry_point,2026-10-23T11:30:00Z,400,0,adopted_baseline,Original published repository coordinate retained
+COORD-010,SET-005,SRC-013,OSM-node-3289951212,شکریازی,44.9386627,38.3072062,place_node,2026-10-23T12:35:00Z,250,337,comparison_only,Larger disagreement is carried into adopted uncertainty

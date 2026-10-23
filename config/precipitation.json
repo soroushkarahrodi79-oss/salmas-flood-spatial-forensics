@@ -1,0 +1,17 @@
+{
+  "product_family": "NASA GPM IMERG",
+  "version": "V07B",
+  "preferred_current_run": "Late",
+  "final_replacement_policy": "Retain provisional assets and add Final as a new immutable acquisition when available; never overwrite identifiers or checksums.",
+  "grid_support_degrees": 0.1,
+  "temporal_support_minutes": 30,
+  "event_time_assumptions_utc": [
+    "2026-10-22T11:00:00Z",
+    "2026-10-22T12:00:00Z",
+    "2026-10-22T13:00:00Z"
+  ],
+  "accumulation_windows_hours": [0.5, 1, 3, 6, 12, 24, 72, 168],
+  "spatial_summary": ["native_grid_cells_intersecting_hydrological_aoi", "area_weighted_aoi_mean", "aoi_minimum", "aoi_maximum"],
+  "prohibited_interpretation": "No IMERG value is a village-scale rain-gauge intensity or design storm.",
+  "access_status": "HOLD_PPS_OR_EARTHDATA_CREDENTIAL_REQUIRED"
+}

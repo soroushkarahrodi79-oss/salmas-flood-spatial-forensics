@@ -1,7 +1,6 @@
-settlement_id,name_en,name_fa,longitude,latitude,coordinate_status,population_2016,population_status,source_id
-SET-001,Kaniyan,کانیان,44.86509135,38.30954776,approximate_settlement_centroid,1151,historical_context_only,SRC-006
-SET-002,Shurik,شوریک,44.77357740,38.32044756,approximate_settlement_centroid,1182,historical_context_only,SRC-007
-SET-003,Silab,سیلاب,44.75957177,38.31635075,approximate_settlement_centroid,3652,historical_context_only,SRC-008
-SET-004,Mafi Kandi,مافی کندی,44.90521037,38.32262776,approximate_settlement_centroid,840,historical_context_only,SRC-009
-SET-005,Shekeryazi,شکریازی,44.93916544,38.31021396,approximate_settlement_centroid,2245,historical_context_only,SRC-010
-
+settlement_id,name_en,name_fa,name_variants,longitude,latitude,coordinate_status,coordinate_uncertainty_m,coordinate_revision_id,population_2016,population_status,source_ids
+SET-001,Kaniyan,کانیان,Kani An|Kaniyan|Kānīān,44.86509135,38.30954776,approximate_representative_point,250,COORD-001,1151,historical_context_only,SRC-006|SRC-013
+SET-002,Shurik,شوریک,Shoorik|Shurik|Shurek,44.77357740,38.32044756,approximate_representative_point,300,COORD-003,1182,historical_context_only,SRC-007|SRC-013
+SET-003,Silab,سیلاب,Seilab|Silab|Sīlāb,44.75957177,38.31635075,approximate_representative_point,250,COORD-005,3652,historical_context_only,SRC-008|SRC-013
+SET-004,Mafi Kandi,مافی کندی,Mafi Kandi|Māfī Kandī,44.90521037,38.32262776,approximate_representative_point,250,COORD-007,840,historical_context_only,SRC-009|SRC-013
+SET-005,Shekeryazi,شکریازی,Sheker Yazi|Shekeryazi|Shakaryāzī,44.93916544,38.31021396,approximate_representative_point,400,COORD-009,2245,historical_context_only,SRC-010|SRC-013

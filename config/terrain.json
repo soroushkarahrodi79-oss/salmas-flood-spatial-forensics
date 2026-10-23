@@ -1,0 +1,31 @@
+{
+  "analysis_crs": "EPSG:32638",
+  "target_resolution_m": 30,
+  "source_extent_wgs84": [44.0, 38.0, 45.0, 39.0],
+  "working_extent_wgs84": [44.25, 38.10, 45.00, 38.55],
+  "conditioning_scenarios": [
+    {"id": "fill_all_depressions", "max_depth_m": -1.0},
+    {"id": "preserve_depressions_gt_2m", "max_depth_m": 2.0}
+  ],
+  "flow_routing": "D8_steepest_gradient",
+  "outlet_rule": "valid_raster_edges",
+  "drainage_threshold_km2": [0.5, 1.0, 2.0, 5.0, 10.0],
+  "pour_point_search_radius_m": 1500,
+  "pour_point_uncertainty_m": [0, 150, 300],
+  "hand": {"enabled": false, "reason": "Drainage definition and impact locations are not independently verified."},
+  "dem_sources": [
+    {
+      "id": "COPDEM_GLO30_N38E044",
+      "kind": "DSM",
+      "path": "data/raw/copdem/Copernicus_DSM_COG_10_N38_00_E044_00_DEM.tif",
+      "quality_mask_path": "data/raw/copdem/Copernicus_DSM_COG_10_N38_00_E044_00_EDM.tif",
+      "water_mask_path": "data/raw/copdem/Copernicus_DSM_COG_10_N38_00_E044_00_WBM.tif"
+    },
+    {
+      "id": "MAPZEN_SKADI_N38E044",
+      "kind": "mixed_source_bare_earth_DEM",
+      "path": "data/raw/mapzen/N38E044.hgt.gz",
+      "limitations": "Mapzen Terrain Tiles blend open sources; local source lineage must be checked before treating this as pure SRTM. Used only for pathway sensitivity."
+    }
+  ]
+}

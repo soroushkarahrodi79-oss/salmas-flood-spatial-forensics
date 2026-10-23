@@ -3,6 +3,7 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
+*.egg-info/
 .DS_Store
 
 # Large or acquired data
@@ -10,6 +11,8 @@ data/raw/
 data/interim/
 data/processed/
 outputs/
+logs/
+run-manifest.local.json
 *.tif
 *.tiff
 *.jp2
@@ -17,6 +20,13 @@ outputs/
 *.hdf5
 *.zip
 *.SAFE/
+*.hgt
+*.hgt.gz
+*.part
+
+# Publication artifacts are reviewed and deliberately tracked.
+!outputs/publication/
+!outputs/publication/**
 
 # QGIS transient files
 *.qgz~

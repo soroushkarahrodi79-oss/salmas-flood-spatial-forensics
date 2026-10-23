@@ -15,6 +15,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+      - name: Install deterministic analysis dependencies
+        run: |
+          pip install -r requirements-analysis.txt
+          pip install -e . --no-deps
       - name: Validate research baseline
         run: python scripts/validate_project.py
       - name: Run unit tests

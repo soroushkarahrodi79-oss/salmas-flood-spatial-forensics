@@ -29,6 +29,11 @@ class BaselineTests(unittest.TestCase):
         self.assertTrue(gates["hydraulic_depth_velocity"].startswith("NO_GO"))
         self.assertTrue(gates["return_period"].startswith("NO_GO"))
 
+    def test_interchange_and_analysis_crs_are_distinct(self) -> None:
+        config = json.loads((ROOT / "config/study.json").read_text(encoding="utf-8"))
+        self.assertEqual(config["spatial"]["web_crs"], "EPSG:4326")
+        self.assertNotEqual(config["spatial"]["web_crs"], config["spatial"]["analysis_crs"])
+
     def test_analysis_crs_is_utm_zone_38n(self) -> None:
         config = json.loads((ROOT / "config/study.json").read_text(encoding="utf-8"))
         self.assertEqual(config["spatial"]["analysis_crs"], "EPSG:32638")

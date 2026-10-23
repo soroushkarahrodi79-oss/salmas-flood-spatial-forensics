@@ -1,0 +1,22 @@
+{
+  "claim_status": [
+    "supported_observation",
+    "supported_source_report",
+    "supersedable_operational_report",
+    "supported_absence",
+    "unresolved",
+    "unsupported",
+    "out_of_scope"
+  ],
+  "confidence": ["none", "low", "medium", "medium_high", "high"],
+  "evidence_class": [
+    "observed_impact",
+    "probable_flood_related_change",
+    "possible_flood_related_change",
+    "terrain_supported_runoff_pathway",
+    "terrain_susceptibility_only",
+    "insufficient_observation",
+    "outside_analytical_support"
+  ],
+  "gate_state_prefix": ["GO", "HOLD", "NO_GO", "OUT_OF_SCOPE"]
+}
