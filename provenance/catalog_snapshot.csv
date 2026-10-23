@@ -1,0 +1,5 @@
+snapshot_id,collection,item_id,acquired_utc,orbit_state,relative_orbit,polarizations,tile_id,cloud_cover_percent,event_relation,query_bbox,queried_utc,source_id,interpretation
+CAT-001,sentinel-1-grd,S1D_IW_GRDH_1SDV_20261021T145230_20261021T145255_005115_009AFD_783F_COG,2026-10-21T14:52:30.175226Z,ascending,174,VV|VH,,,pre_event,"44.70,38.24,45.00,38.38",2026-10-23T11:30:00Z,SRC-004,Close radar baseline; do not compare with incompatible orbit geometry
+CAT-002,sentinel-2-l2a,S2C_MSIL2A_20261022T074951_N0513_R135_T38SNH_20261022T105704,2026-10-22T07:49:51.025000Z,,,B02|B03|B04|B08|B11|B12,T38SNH,27.63,pre_event_same_day,"44.70,38.24,45.00,38.38",2026-10-23T11:30:00Z,SRC-005,Tile-level cloud percentage is not AOI-specific
+CAT-003,sentinel-2-l2a,S2C_MSIL2A_20261022T074951_N0513_R135_T38SMH_20261022T105704,2026-10-22T07:49:51.025000Z,,,B02|B03|B04|B08|B11|B12,T38SMH,48.13,pre_event_same_day,"44.70,38.24,45.00,38.38",2026-10-23T11:30:00Z,SRC-005,Tile-level cloud percentage is not AOI-specific
+

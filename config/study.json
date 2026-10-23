@@ -1,0 +1,31 @@
+{
+  "project_id": "SALMAS-FLOOD-2026",
+  "event": {
+    "name": "Salmas flash flood",
+    "date_local": "2026-10-22",
+    "calendar_date_reported": "1405-07-30",
+    "timezone": "Asia/Tehran",
+    "event_window_local": {
+      "start": "2026-10-22T14:30:00+03:30",
+      "end": "2026-10-22T20:00:00+03:30",
+      "status": "provisional"
+    }
+  },
+  "spatial": {
+    "catalogue_bbox_wgs84": [44.7, 38.24, 45.0, 38.38],
+    "analysis_crs": "EPSG:32638",
+    "web_crs": "EPSG:4326",
+    "aoi_rule": "expand_to_validated_upstream_catchments"
+  },
+  "gates": {
+    "event_confirmation": "GO",
+    "terrain_analysis": "GO",
+    "precipitation_context": "GO",
+    "satellite_flood_extent": "HOLD_POST_EVENT_PAIR_REQUIRED",
+    "damage_quantification": "HOLD_GROUND_TRUTH_REQUIRED",
+    "hydraulic_depth_velocity": "NO_GO_INPUTS_INSUFFICIENT",
+    "return_period": "NO_GO_GAUGE_SERIES_REQUIRED",
+    "climate_attribution": "OUT_OF_SCOPE"
+  }
+}
+

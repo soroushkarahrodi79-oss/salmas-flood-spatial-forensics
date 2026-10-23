@@ -1,0 +1,10 @@
+event_id,time_local,time_utc,place,event_type,observation,source_id,confidence,verification_status
+EVT-001,2026-10-22T14:44:00+03:30,2026-10-22T11:14:00Z,Khoy-Salmas road near Salmas railway bridge,transport_disruption,Heavy rain and floodwater were reported to slow traffic,SRC-003,medium,local_report_only
+EVT-002,2026-10-22T15:31:00+03:30,2026-10-22T12:01:00Z,Shurik and Kaniyan,initial_flood_report,Flooding was reported in both settlements with greater intensity reported in Kaniyan,SRC-003,medium,local_report_only
+EVT-003,2026-10-22T16:03:00+03:30,2026-10-22T12:33:00Z,Shurik,livestock_structure_impact,Floodwater was reported entering animal shelters,SRC-003,medium,media_not_geolocated
+EVT-004,2026-10-22T16:32:00+03:30,2026-10-22T13:02:00Z,Silab,hail,Hail was reported in Silab,SRC-003,medium,local_report_only
+EVT-005,2026-10-22T16:40:00+03:30,2026-10-22T13:10:00Z,Shurik,residential_impact,Floodwater was reported entering homes,SRC-003,medium,media_not_geolocated
+EVT-006,2026-10-22T17:15:00+03:30,2026-10-22T13:45:00Z,Silab Shurik and Kaniyan,multi_settlement_impact,Floodwater and residential risk were reported across three settlements,SRC-003,medium,local_report_only
+EVT-007,2026-10-22T22:50:00+03:30,2026-10-22T19:20:00Z,Salmas County,official_operational_update,Two deaths and response operations across named settlements were reported,SRC-001,high_for_report_content,supersedable_count
+EVT-008,2026-10-23T10:51:00+03:30,2026-10-23T07:21:00Z,Salmas County,later_official_update,Three deaths and 120 affected dwellings across four villages were reported,SRC-002,high_for_report_content,supersedable_count
+

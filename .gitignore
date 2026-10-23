@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+
+# Large or acquired data
+data/raw/
+data/interim/
+data/processed/
+outputs/
+*.tif
+*.tiff
+*.jp2
+*.nc
+*.hdf5
+*.zip
+*.SAFE/
+
+# QGIS transient files
+*.qgz~
+*.qgd
+
