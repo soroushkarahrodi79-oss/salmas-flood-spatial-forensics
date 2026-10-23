@@ -359,12 +359,26 @@ def main() -> int:
     if not args.skip_figure:
         make_figure(publication_dir, primary, settlements, transform, commit)
     config_hashes = {str(path.relative_to(ROOT)).replace("\\", "/"): sha256_file(path) for path in sorted((ROOT / "config").glob("*.json"))}
+    tracked_inputs = [
+        ROOT / "data/reference/affected_settlements.csv",
+        ROOT / "provenance/acquisition_inventory.csv",
+        ROOT / "provenance/catalog_snapshot.csv",
+        ROOT / "provenance/claim_register.csv",
+        ROOT / "provenance/event_timeline.csv",
+        ROOT / "provenance/settlement_coordinate_observations.csv",
+        ROOT / "provenance/source_manifest.csv",
+    ]
+    tracked_input_hashes = {
+        str(path.relative_to(ROOT)).replace("\\", "/"): sha256_file(path) for path in tracked_inputs
+    }
     inputs = json.loads((ROOT / "data/raw/acquisition_manifest.json").read_text(encoding="utf-8"))
     manifest = {
         "run_id": "phase1-terrain-reference", "created_utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "code_commit": commit, "working_tree_note": "Publication products are committed separately after this code revision.",
         "analysis_crs": "EPSG:32638", "grid": {"width": width, "height": height, "transform": list(transform)[:6]},
-        "configuration_sha256": config_hashes, "inputs": inputs,
+        "configuration_sha256": config_hashes,
+        "tracked_input_sha256": tracked_input_hashes,
+        "inputs": inputs,
         "software": {name: version(name) for name in ["numpy", "rasterio", "pyflwdir", "pyproj", "shapely", "matplotlib"]},
         "outputs": {},
         "scientific_class": "terrain_susceptibility_only",

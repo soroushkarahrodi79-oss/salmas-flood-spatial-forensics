@@ -1,9 +1,12 @@
 # Phase 1 decision — terrain–rainfall–observation feasibility
 
-**Decision date:** 23 October 2026  
-**Milestone verdict:** **HOLD**  
-**Terrain component:** **GO — terrain susceptibility only**  
-**Precipitation component:** **HOLD — validated observation not acquired**  
+**Decision date:** 23 October 2026
+
+**Milestone verdict:** **HOLD**
+
+**Terrain component:** **GO — terrain susceptibility only**
+
+**Precipitation component:** **HOLD — validated observation not acquired**
 **Satellite flood extent:** **HOLD — post-event pair required**
 
 ## Decision basis

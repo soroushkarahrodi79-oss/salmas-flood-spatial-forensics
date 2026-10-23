@@ -58,12 +58,23 @@ def main() -> int:
     ], loc="lower left", fontsize=8)
     event_start = utc(config["event"]["event_window_utc"]["start"]); event_end = utc(config["event"]["event_window_utc"]["end"])
     timeline.axvspan(event_start, event_end, color="#E69F00", alpha=0.25, label="provisional event window")
+    lane_counts: dict[tuple[datetime, int], int] = {}
     for row in catalogue:
         acquired = utc(row["acquired_utc"])
         y = 1 if row["collection"] == "sentinel-1-grd" else 0
         marker = "^" if y else "s"
         timeline.scatter(acquired, y, marker=marker, s=55, color="#0072B2")
-        timeline.annotate(row["satellite"] if y else row["tile_id"], (acquired, y), xytext=(0, 8), textcoords="offset points", ha="center", fontsize=7)
+        lane_key = (acquired, y)
+        label_level = lane_counts.get(lane_key, 0)
+        lane_counts[lane_key] = label_level + 1
+        timeline.annotate(
+            row["satellite"] if y else row["tile_id"],
+            (acquired, y),
+            xytext=(0, 8 + label_level * 14),
+            textcoords="offset points",
+            ha="center",
+            fontsize=7,
+        )
     timeline.set_yticks([0, 1], ["Sentinel-2", "Sentinel-1"])
     timeline.set_xlim(utc("2026-10-21T00:00:00Z"), utc("2026-10-24T00:00:00Z"))
     timeline.xaxis.set_major_formatter(mdates.DateFormatter("%d Oct\n%H:%M", tz=event_start.tzinfo))
