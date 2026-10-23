@@ -11,6 +11,7 @@
   "outlet_rule": "valid_raster_edges",
   "drainage_threshold_km2": [0.5, 1.0, 2.0, 5.0, 10.0],
   "pour_point_search_radius_m": 1500,
+  "pour_point_minimum_drainage_area_km2": 1.0,
   "pour_point_uncertainty_m": [0, 150, 300],
   "hand": {"enabled": false, "reason": "Drainage definition and impact locations are not independently verified."},
   "dem_sources": [

@@ -8,11 +8,17 @@ import csv
 import gzip
 import hashlib
 import json
+import os
 import subprocess
 import sys
 from datetime import datetime, timezone
 from importlib.metadata import version
 from pathlib import Path
+
+# Do not inherit an unrelated system PROJ installation (common with PostGIS).
+# Rasterio and pyproj wheels discover their own compatible projection database.
+os.environ.pop("PROJ_LIB", None)
+os.environ.pop("PROJ_DATA", None)
 
 import numpy as np
 import rasterio
@@ -133,6 +139,8 @@ def make_figure(publication_dir: Path, primary: dict, settlements: list[dict[str
     import matplotlib.pyplot as plt
     from bidi.algorithm import get_display
     import arabic_reshaper
+    from matplotlib.lines import Line2D
+    metric = Transformer.from_crs("EPSG:4326", "EPSG:32638", always_xy=True)
 
     fig, ax = plt.subplots(figsize=(10, 8), constrained_layout=True)
     slope = primary["products"]["slope_degrees"]
@@ -146,11 +154,20 @@ def make_figure(publication_dir: Path, primary: dict, settlements: list[dict[str
             coordinates = np.asarray(feature["geometry"]["coordinates"])
             if coordinates.size:
                 ax.plot(coordinates[:, 0], coordinates[:, 1], color=color, linewidth=width, alpha=0.8)
+    offsets = {"SET-001": (-52, -26), "SET-002": (-10, 28), "SET-003": (-54, 18), "SET-004": (14, 34), "SET-005": (18, -30)}
     for item in primary["pour_points"]:
         row = next(value for value in settlements if value["settlement_id"] == item["settlement_id"])
         label_fa = get_display(arabic_reshaper.reshape(row["name_fa"]))
+        sx, sy = metric.transform(float(row["longitude"]), float(row["latitude"]))
+        ax.plot([sx, item["x"]], [sy, item["y"]], color="#6A3D9A", linewidth=0.5, linestyle="--", alpha=0.8)
+        ax.scatter(sx, sy, marker="x", s=28, color="#6A3D9A", linewidth=1.1, zorder=5)
         ax.scatter(item["x"], item["y"], marker="o", s=24, facecolor="#E69F00", edgecolor="black", linewidth=0.4, zorder=5)
-        ax.text(item["x"] + 250, item["y"] + 150, f"{row['name_en']} / {label_fa}", fontsize=7, zorder=6)
+        ax.annotate(
+            f"{row['name_en']}\n{label_fa}", xy=(item["x"], item["y"]), xytext=offsets[row["settlement_id"]],
+            textcoords="offset points", fontsize=7, zorder=6,
+            arrowprops={"arrowstyle": "-", "linewidth": 0.5, "color": "#333333"},
+            bbox={"facecolor": "white", "alpha": 0.75, "edgecolor": "none", "pad": 1.5},
+        )
     ax.set_title("Salmas Phase 1 — terrain-supported runoff pathways\n22 October 2026 event | candidate drainage only / مسیرهای مدل‌شده، نه گستره سیلاب", fontsize=12)
     ax.set_xlabel("Easting (m), EPSG:32638")
     ax.set_ylabel("Northing (m), EPSG:32638")
@@ -167,6 +184,12 @@ def make_figure(publication_dir: Path, primary: dict, settlements: list[dict[str
     )
     colorbar = fig.colorbar(view, ax=ax, fraction=0.03, pad=0.02)
     colorbar.set_label("Slope (degrees; DSM-derived)")
+    ax.legend(handles=[
+        Line2D([0], [0], color="#56B4E9", lw=1, label="≥1 km² contributing area"),
+        Line2D([0], [0], color="#0072B2", lw=2, label="≥5 km² contributing area"),
+        Line2D([0], [0], marker="x", color="#6A3D9A", lw=0, label="reported-settlement reference point"),
+        Line2D([0], [0], marker="o", markerfacecolor="#E69F00", markeredgecolor="black", lw=0, label="candidate outlet (unverified)"),
+    ], loc="upper left", fontsize=7, framealpha=0.85)
     path = publication_dir / "terrain_pathway_feasibility.png"
     fig.savefig(path, dpi=180, metadata={"Title": "Terrain-supported runoff pathways; insufficient event observation"})
     plt.close(fig)
@@ -201,7 +224,11 @@ def main() -> int:
             write_raster(interim_dir / f"{source_key}_{scenario['id']}_flow_direction_d8.tif", products["flow_direction_d8"], transform, 247, "uint8")
             for integer_id, settlement in enumerate(settlements, start=1):
                 x, y = to_metric.transform(float(settlement["longitude"]), float(settlement["latitude"]))
-                point = candidate_pour_point(x, y, products["upstream_area_km2"], transform, float(config["pour_point_search_radius_m"]))
+                point = candidate_pour_point(
+                    x, y, products["upstream_area_km2"], transform,
+                    float(config["pour_point_search_radius_m"]),
+                    float(config["pour_point_minimum_drainage_area_km2"]),
+                )
                 idx = point.row * width + point.col
                 basin = flow.basins(idxs=np.array([idx]), ids=np.array([integer_id], dtype=np.uint32)) == integer_id
                 boundary = touches_edge(basin)
@@ -230,14 +257,18 @@ def main() -> int:
     stability_rows = []
     for scenario in config["conditioning_scenarios"]:
         keys = [f"{source['id']}__{scenario['id']}" for source in config["dem_sources"]]
-        stability = stable_drainage_fraction([scenario_results[key]["products"]["upstream_area_km2"] for key in keys], thresholds)
-        for threshold, fraction in stability.items():
-            stability_rows.append({"comparison": f"DEM_sources__{scenario['id']}", "threshold_km2": threshold, "intersection_over_union": fraction})
+        maps = [scenario_results[key]["products"]["upstream_area_km2"] for key in keys]
+        for tolerance in (0, 2):
+            stability = stable_drainage_fraction(maps, thresholds, tolerance_cells=tolerance)
+            for threshold, fraction in stability.items():
+                stability_rows.append({"comparison": f"DEM_sources__{scenario['id']}", "tolerance_cells": tolerance, "threshold_km2": threshold, "intersection_over_union": fraction})
     for source in config["dem_sources"]:
         keys = [f"{source['id']}__{scenario['id']}" for scenario in config["conditioning_scenarios"]]
-        stability = stable_drainage_fraction([scenario_results[key]["products"]["upstream_area_km2"] for key in keys], thresholds)
-        for threshold, fraction in stability.items():
-            stability_rows.append({"comparison": f"conditioning__{source['id']}", "threshold_km2": threshold, "intersection_over_union": fraction})
+        maps = [scenario_results[key]["products"]["upstream_area_km2"] for key in keys]
+        for tolerance in (0, 2):
+            stability = stable_drainage_fraction(maps, thresholds, tolerance_cells=tolerance)
+            for threshold, fraction in stability.items():
+                stability_rows.append({"comparison": f"conditioning__{source['id']}", "tolerance_cells": tolerance, "threshold_km2": threshold, "intersection_over_union": fraction})
     with (publication_dir / "candidate_pour_points.csv").open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=list(summary_rows[0])); writer.writeheader(); writer.writerows(summary_rows)
     with (publication_dir / "drainage_threshold_sensitivity.csv").open("w", encoding="utf-8", newline="") as handle:

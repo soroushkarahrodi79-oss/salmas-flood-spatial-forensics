@@ -31,10 +31,10 @@ class ProcessingTests(unittest.TestCase):
         np.testing.assert_allclose(first["upstream_area_km2"], second["upstream_area_km2"])
         self.assertGreater(float(first["fill_depth_m"][2, 2]), 0)
 
-    def test_pour_point_maximizes_contributing_area_within_radius(self) -> None:
+    def test_pour_point_selects_nearest_qualifying_drainage_cell(self) -> None:
         area = np.zeros((5, 5), dtype=float); area[2, 3] = 9; area[4, 4] = 99
         transform = Affine(10, 0, 0, 0, -10, 50)
-        point = candidate_pour_point(25, 25, area, transform, search_radius_m=15)
+        point = candidate_pour_point(25, 25, area, transform, search_radius_m=40, minimum_drainage_area_km2=1)
         self.assertEqual((point.row, point.col), (2, 3))
 
     def test_threshold_stability_reports_intersection_over_union(self) -> None:

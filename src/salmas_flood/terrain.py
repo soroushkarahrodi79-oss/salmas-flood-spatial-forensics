@@ -64,19 +64,28 @@ def candidate_pour_point(
     upstream_area_km2: np.ndarray,
     transform: Affine,
     search_radius_m: float,
+    minimum_drainage_area_km2: float = 1.0,
 ) -> PourPoint:
     assert_metric_north_up(transform)
     inverse = ~transform
     col_f, row_f = inverse * (x, y)
     row0, col0 = int(round(row_f - 0.5)), int(round(col_f - 0.5))
-    radius_cells = int(np.ceil(search_radius_m / transform.a))
     rows, cols = np.indices(upstream_area_km2.shape)
     distance = np.hypot((rows - row0) * abs(transform.e), (cols - col0) * transform.a)
-    eligible = (distance <= search_radius_m) & np.isfinite(upstream_area_km2)
+    eligible = (
+        (distance <= search_radius_m)
+        & np.isfinite(upstream_area_km2)
+        & (upstream_area_km2 >= minimum_drainage_area_km2)
+    )
     if not np.any(eligible):
-        raise ValueError("No valid drainage candidate within search radius")
-    score = np.where(eligible, upstream_area_km2, -np.inf)
-    row, col = np.unravel_index(np.argmax(score), score.shape)
+        raise ValueError("No drainage cell meeting the contributing-area threshold within search radius")
+    # Nearest qualifying network cell is less biased toward the outer search edge
+    # than maximizing area. Break equal-distance ties toward the larger pathway.
+    candidate_rows, candidate_cols = np.where(eligible)
+    order = np.lexsort(
+        (-upstream_area_km2[candidate_rows, candidate_cols], distance[candidate_rows, candidate_cols])
+    )
+    row, col = candidate_rows[order[0]], candidate_cols[order[0]]
     px, py = transform * (col + 0.5, row + 0.5)
     return PourPoint(
         x=float(px),
@@ -89,7 +98,7 @@ def candidate_pour_point(
 
 
 def stable_drainage_fraction(
-    area_maps: Iterable[np.ndarray], thresholds_km2: Iterable[float]
+    area_maps: Iterable[np.ndarray], thresholds_km2: Iterable[float], tolerance_cells: int = 0
 ) -> dict[float, float]:
     maps = [np.asarray(item) for item in area_maps]
     if len(maps) < 2:
@@ -99,6 +108,11 @@ def stable_drainage_fraction(
     result: dict[float, float] = {}
     for threshold in thresholds_km2:
         masks = [item >= threshold for item in maps]
+        if tolerance_cells:
+            from scipy.ndimage import binary_dilation
+
+            structure = np.ones((2 * tolerance_cells + 1, 2 * tolerance_cells + 1), dtype=bool)
+            masks = [binary_dilation(mask, structure=structure) for mask in masks]
         union = np.logical_or.reduce(masks)
         intersection = np.logical_and.reduce(masks)
         result[float(threshold)] = float(intersection.sum() / union.sum()) if union.any() else 1.0
