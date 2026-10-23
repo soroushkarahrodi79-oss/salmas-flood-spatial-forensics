@@ -1,0 +1,19 @@
+{
+  "edm_code_counts": {
+    "1": 3664193,
+    "2": 1448,
+    "3": 703,
+    "4": 1865,
+    "5": 205,
+    "9": 973,
+    "11": 21,
+    "255": 1674
+  },
+  "water_mask_code_counts": {
+    "0": 3668435,
+    "2": 973,
+    "255": 1674
+  },
+  "copdem_void_cells": 1674,
+  "note": "Codes are reported without relabelling; consult the Copernicus DEM Product Handbook."
+}

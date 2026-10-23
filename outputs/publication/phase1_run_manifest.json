@@ -1,0 +1,150 @@
+{
+  "run_id": "phase1-terrain-reference",
+  "created_utc": "2026-10-23T16:56:11.849242Z",
+  "code_commit": "00bb88724d71",
+  "working_tree_note": "Publication products are committed separately after this code revision.",
+  "analysis_crs": "EPSG:32638",
+  "grid": {
+    "width": 2193,
+    "height": 1674,
+    "transform": [
+      30.0,
+      0.0,
+      434220.0,
+      0.0,
+      -30.0,
+      4267110.0
+    ]
+  },
+  "configuration_sha256": {
+    "config/data_sources.json": "9a5d6f762fe4938c0439ca420319bbc7fb58504c85ffb0b6ac5e7ce6fdb7779a",
+    "config/precipitation.json": "27b8b2e07f416a971652035d01b3df2d5ce2b0e139a5d0398a86ea92af13e552",
+    "config/study.json": "0c4a7795e03d1f8d0302e5fb13727d49248ca869a954cb8f9f738d796b02b72d",
+    "config/terrain.json": "dce70280c1adb604dfd7b448353abaadfbf1bec7cf94ccad90daf3789f17a0d9",
+    "config/vocabularies.json": "87dcb26fc6d4c7af6d49ba292c9d13c3fbe6dd738cfd9613c6875a40621ca6e5"
+  },
+  "tracked_input_sha256": {
+    "data/reference/affected_settlements.csv": "201b1681b10e12de113acca0a02c2e8e6187e98187f7e6ca0536d3f35403322d",
+    "provenance/acquisition_inventory.csv": "ae4e295b5aac09202852c2edfe84d2fba5ac4100be0c6baae2cbccb1cdafdced",
+    "provenance/catalog_snapshot.csv": "5001387b645f1fc5d7b77249b134d2da7fc612d9613630864f1fc24ea266c968",
+    "provenance/claim_register.csv": "e3bb01121a1897d0ba826b8fbae43d2f336c0ebbc488972a49acd8a9856c2815",
+    "provenance/event_timeline.csv": "e5d2622cf98c8671f25d8414445b6e88d211b1a6385978b85636b393c7aea4d1",
+    "provenance/settlement_coordinate_observations.csv": "64467627441623e0053206dd8339ee5019cda3831d264df9b4c440dcf080fd83",
+    "provenance/source_manifest.csv": "b0f9cb8e332ae938506acba531e1d3372ed885791c67e28acabdf03872710f55"
+  },
+  "inputs": [
+    {
+      "asset_id": "COPDEM_GLO30_N38E044_DEM",
+      "provider": "Copernicus Data Space Ecosystem via AWS Open Data",
+      "dataset": "Copernicus DEM GLO-30 2021",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_E044_00_DEM/Copernicus_DSM_COG_10_N38_00_E044_00_DEM.tif",
+      "path": "data/raw/copdem/Copernicus_DSM_COG_10_N38_00_E044_00_DEM.tif",
+      "retrieved_utc": "2026-10-23T13:23:26.258982Z",
+      "size_bytes": 39854561,
+      "sha256": "9e2ebfe846069147b02eac97b18290357ed5c2d13a843c02245f4d7c0b65d1a6",
+      "role": "primary_terrain",
+      "license_or_terms": "Copernicus DEM GLO-30 free licence; attribution required"
+    },
+    {
+      "asset_id": "COPDEM_GLO30_N38E044_EDM",
+      "provider": "Copernicus Data Space Ecosystem via AWS Open Data",
+      "dataset": "Copernicus DEM GLO-30 Editing Data Mask",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_E044_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N38_00_E044_00_EDM.tif",
+      "path": "data/raw/copdem/Copernicus_DSM_COG_10_N38_00_E044_00_EDM.tif",
+      "retrieved_utc": "2026-10-23T13:23:26.427155Z",
+      "size_bytes": 132163,
+      "sha256": "f39aaa259d4d8e78d2b132b8a89e1ebc73e62b1d497bb7594fbc0ac24367c31e",
+      "role": "terrain_quality_mask",
+      "license_or_terms": "Copernicus DEM GLO-30 free licence; attribution required"
+    },
+    {
+      "asset_id": "COPDEM_GLO30_N38E044_WBM",
+      "provider": "Copernicus Data Space Ecosystem via AWS Open Data",
+      "dataset": "Copernicus DEM GLO-30 Water Body Mask",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_E044_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N38_00_E044_00_WBM.tif",
+      "path": "data/raw/copdem/Copernicus_DSM_COG_10_N38_00_E044_00_WBM.tif",
+      "retrieved_utc": "2026-10-23T13:23:26.427155Z",
+      "size_bytes": 26738,
+      "sha256": "96df9ab76dbd03048c9f777f385d99ad196519e427637c2d46eafdbe6a28a0e5",
+      "role": "terrain_water_mask",
+      "license_or_terms": "Copernicus DEM GLO-30 free licence; attribution required"
+    },
+    {
+      "asset_id": "MAPZEN_SKADI_N38E044",
+      "provider": "Mapzen / Linux Foundation via AWS Registry of Open Data",
+      "dataset": "Terrain Tiles v1.1 Skadi",
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N38/N38E044.hgt.gz",
+      "path": "data/raw/mapzen/N38E044.hgt.gz",
+      "retrieved_utc": "2026-10-23T13:23:26.427155Z",
+      "size_bytes": 14478036,
+      "sha256": "a3b83d59dcbb2a8eeaa4d63fc794f88bf625bd9f9bfcbc38b5143fc8c343c878",
+      "role": "secondary_terrain_sensitivity",
+      "license_or_terms": "Source-dependent open-data attribution; see Tilezen joerd attribution"
+    },
+    {
+      "asset_id": "OSM_TRANSPORT_AOI_20261023",
+      "provider": "OpenStreetMap API",
+      "dataset": "OpenStreetMap transport snapshot",
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=44.72,38.28,44.97,38.35",
+      "path": "data/raw/osm/aoi.osm",
+      "retrieved_utc": "2026-10-23T13:23:26.499509Z",
+      "size_bytes": 1353747,
+      "sha256": "7426719aad05492e070dae32d3985f973c134ecddbffcc6f29c9e9d24a40ed6a",
+      "role": "candidate_infrastructure_crossing_screen",
+      "license_or_terms": "OpenStreetMap data © contributors; ODbL 1.0"
+    }
+  ],
+  "software": {
+    "numpy": "2.5.4",
+    "rasterio": "1.5.2",
+    "pyflwdir": "0.5.12",
+    "pyproj": "3.8.0",
+    "shapely": "2.2.0",
+    "matplotlib": "3.11.2"
+  },
+  "outputs": {
+    "candidate_catchments.geojson": {
+      "size_bytes": 177678,
+      "sha256": "ace696b0e6c1e2c9eb29bbaa01c26113375edd435594ce50121f8902fcb162c0"
+    },
+    "candidate_infrastructure_crossings.csv": {
+      "size_bytes": 20347,
+      "sha256": "f17bbc56e50bc9285ea577752f9cf1ee49d591a885b9c13fecd3cad2ba39c588"
+    },
+    "candidate_infrastructure_crossings.geojson": {
+      "size_bytes": 86377,
+      "sha256": "f18c7530823ccc0dd2a99ee8c2580bdb3b44de49b268e2bdaaa4f028ed8dbdaa"
+    },
+    "candidate_pour_points.csv": {
+      "size_bytes": 3746,
+      "sha256": "ec72b4110a27975b2553423eca5c0d8f3bed7b40fb733f3809aa2f18a000f679"
+    },
+    "candidate_pour_points.geojson": {
+      "size_bytes": 3690,
+      "sha256": "92a25b1d8fba33b9040bc6989c6c04eefde007283c933808f3839dee33073206"
+    },
+    "drainage_threshold_sensitivity.csv": {
+      "size_bytes": 2581,
+      "sha256": "53eb23b2b5a4168b6f527d43b0c92677123272f9af7ad0cf1a5aba480588794a"
+    },
+    "satellite_observation_gap.png": {
+      "size_bytes": 185104,
+      "sha256": "23491a049fdec2d3f10e999db0bfe41540c423abbef694f71b61a1b6139e6ef0"
+    },
+    "terrain_pathway_feasibility.png": {
+      "size_bytes": 2233018,
+      "sha256": "1eba82d81b332e2822bb2bbbe714244918548b5c1c9dd4e4b334ee9622a6ff2a"
+    },
+    "terrain_quality_summary.json": {
+      "size_bytes": 380,
+      "sha256": "f653f39932350d94912ef5970ae84fe6ca98538fc16b06867ef1ef65f914f591"
+    }
+  },
+  "scientific_class": "terrain_susceptibility_only",
+  "prohibited_interpretations": [
+    "observed flood extent",
+    "flood depth",
+    "discharge",
+    "confirmed damage"
+  ]
+}

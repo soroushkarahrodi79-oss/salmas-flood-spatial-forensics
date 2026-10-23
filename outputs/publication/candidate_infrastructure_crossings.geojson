@@ -1,0 +1,2882 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0001",
+        "osm_way_id": "55149198",
+        "transport_kind": "railway",
+        "transport_class": "rail",
+        "longitude": 44.823069,
+        "latitude": 38.338765,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.823068736028716,
+          38.338765331472466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0002",
+        "osm_way_id": "133758940",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.79688,
+        "latitude": 38.367449,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.79688011807173,
+          38.36744854028063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0003",
+        "osm_way_id": "133758942",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.812043,
+        "latitude": 38.308693,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.81204261518656,
+          38.308692901027904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0004",
+        "osm_way_id": "133758942",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.848114,
+        "latitude": 38.312249,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.84811435751929,
+          38.31224948772422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0005",
+        "osm_way_id": "133758942",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.930336,
+        "latitude": 38.307079,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.93033579492825,
+          38.30707899941739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0006",
+        "osm_way_id": "133758942",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.928233,
+        "latitude": 38.309749,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.92823340097414,
+          38.309749174854446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0007",
+        "osm_way_id": "133758942",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.910187,
+        "latitude": 38.316072,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.910187328407126,
+          38.31607222106416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0008",
+        "osm_way_id": "133758942",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.901792,
+        "latitude": 38.318425,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.90179182544908,
+          38.31842483597009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0009",
+        "osm_way_id": "133758942",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.863684,
+        "latitude": 38.31025,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.863683686369555,
+          38.310250104372585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0010",
+        "osm_way_id": "133758942",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.811526,
+        "latitude": 38.308505,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.81152553208535,
+          38.30850507367624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0011",
+        "osm_way_id": "133758944",
+        "transport_kind": "railway",
+        "transport_class": "rail",
+        "longitude": 44.901791,
+        "latitude": 38.31885,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.90179125243387,
+          38.31884960811851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0012",
+        "osm_way_id": "133758949",
+        "transport_kind": "railway",
+        "transport_class": "rail",
+        "longitude": 44.910355,
+        "latitude": 38.316205,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.91035531100011,
+          38.316204824572495
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0013",
+        "osm_way_id": "133758950",
+        "transport_kind": "railway",
+        "transport_class": "rail",
+        "longitude": 44.840856,
+        "latitude": 38.321407,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.84085567601738,
+          38.321406994977814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0014",
+        "osm_way_id": "133758950",
+        "transport_kind": "railway",
+        "transport_class": "rail",
+        "longitude": 44.825794,
+        "latitude": 38.324396,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.82579382250873,
+          38.3243959637478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0015",
+        "osm_way_id": "375711068",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.767751,
+        "latitude": 38.307286,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.767751079714856,
+          38.307286219112584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0016",
+        "osm_way_id": "375711068",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.779212,
+        "latitude": 38.282654,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.77921246049612,
+          38.28265448414988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0017",
+        "osm_way_id": "375711068",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.781811,
+        "latitude": 38.273576,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.78181143744313,
+          38.273576277308344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0018",
+        "osm_way_id": "375711068",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.781823,
+        "latitude": 38.273612,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.78182328703272,
+          38.27361191639564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0019",
+        "osm_way_id": "375711068",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.775671,
+        "latitude": 38.298379,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.77567135202104,
+          38.29837870928699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0020",
+        "osm_way_id": "375724261",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.760651,
+        "latitude": 38.3142,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.760651257997395,
+          38.31420023139174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0021",
+        "osm_way_id": "393339079",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.760409,
+        "latitude": 38.315608,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.76040891492919,
+          38.315607917689924
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0022",
+        "osm_way_id": "393339079",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.758436,
+        "latitude": 38.317555,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.75843592996417,
+          38.31755456115592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0023",
+        "osm_way_id": "393339079",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.739864,
+        "latitude": 38.334982,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.73986408992207,
+          38.33498183902879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0024",
+        "osm_way_id": "393339079",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.760384,
+        "latitude": 38.315448,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.76038392419648,
+          38.3154483575429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0025",
+        "osm_way_id": "527235409",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.757088,
+        "latitude": 38.318341,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.757087850708665,
+          38.31834140954928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0026",
+        "osm_way_id": "527235411",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.760259,
+        "latitude": 38.315349,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.760258763431416,
+          38.315349234922095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0027",
+        "osm_way_id": "545672899",
+        "transport_kind": "railway",
+        "transport_class": "rail",
+        "longitude": 44.809275,
+        "latitude": 38.365637,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.809274919072855,
+          38.36563695010021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0028",
+        "osm_way_id": "545672904",
+        "transport_kind": "railway",
+        "transport_class": "rail",
+        "longitude": 44.805881,
+        "latitude": 38.343401,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.805880667619626,
+          38.343400836639894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0029",
+        "osm_way_id": "670579873",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.823656,
+        "latitude": 38.323518,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.82365644922193,
+          38.32351845902243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0030",
+        "osm_way_id": "670579873",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.821479,
+        "latitude": 38.321651,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.82147861685182,
+          38.321650784464275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0031",
+        "osm_way_id": "670579873",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.827494,
+        "latitude": 38.32706,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.8274936205121,
+          38.327059970540134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0032",
+        "osm_way_id": "670579873",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.838959,
+        "latitude": 38.331802,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.83895936287588,
+          38.33180222096843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0033",
+        "osm_way_id": "670579874",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.838896,
+        "latitude": 38.331874,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.838896252512406,
+          38.331874465505884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0034",
+        "osm_way_id": "670579874",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.827429,
+        "latitude": 38.327111,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.827428998528475,
+          38.32711068589109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0035",
+        "osm_way_id": "670579874",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.822092,
+        "latitude": 38.322281,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.82209161145649,
+          38.32228097123708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0036",
+        "osm_way_id": "670579874",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.821478,
+        "latitude": 38.321777,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.82147830747679,
+          38.321776933621905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0037",
+        "osm_way_id": "670579875",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.820552,
+        "latitude": 38.347618,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.82055232034727,
+          38.3476183104191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0038",
+        "osm_way_id": "670579875",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.823824,
+        "latitude": 38.345052,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.82382436681415,
+          38.345051939511734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0039",
+        "osm_way_id": "670579875",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.816498,
+        "latitude": 38.346844,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.816497900307795,
+          38.34684421201306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0040",
+        "osm_way_id": "684131150",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.739723,
+        "latitude": 38.342191,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.73972319689443,
+          38.342191484196576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0041",
+        "osm_way_id": "684135104",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.735993,
+        "latitude": 38.329709,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.73599261891309,
+          38.329709067921975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0042",
+        "osm_way_id": "684135104",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.737197,
+        "latitude": 38.329616,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.73719716222879,
+          38.329615567192675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0043",
+        "osm_way_id": "684135104",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.738031,
+        "latitude": 38.330276,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.73803085369367,
+          38.33027601160717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0044",
+        "osm_way_id": "684136314",
+        "transport_kind": "highway",
+        "transport_class": "unclassified",
+        "longitude": 44.784753,
+        "latitude": 38.338263,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.784752599407334,
+          38.33826276916907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0045",
+        "osm_way_id": "684136314",
+        "transport_kind": "highway",
+        "transport_class": "unclassified",
+        "longitude": 44.791254,
+        "latitude": 38.342052,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.79125426860225,
+          38.34205203930036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0046",
+        "osm_way_id": "684136316",
+        "transport_kind": "highway",
+        "transport_class": "unclassified",
+        "longitude": 44.801911,
+        "latitude": 38.343621,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.8019110837655,
+          38.343621498789645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0047",
+        "osm_way_id": "684136318",
+        "transport_kind": "highway",
+        "transport_class": "unclassified",
+        "longitude": 44.801223,
+        "latitude": 38.343123,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.80122304313325,
+          38.343122663478404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0048",
+        "osm_way_id": "684136318",
+        "transport_kind": "highway",
+        "transport_class": "unclassified",
+        "longitude": 44.799905,
+        "latitude": 38.34258,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.79990514052077,
+          38.342579680589445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0049",
+        "osm_way_id": "684136318",
+        "transport_kind": "highway",
+        "transport_class": "unclassified",
+        "longitude": 44.801093,
+        "latitude": 38.343061,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.80109318682134,
+          38.34306090851036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0050",
+        "osm_way_id": "694695974",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.904028,
+        "latitude": 38.285017,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.90402800991729,
+          38.28501696964259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0051",
+        "osm_way_id": "694695974",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.900128,
+        "latitude": 38.280653,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.90012769492546,
+          38.28065287572446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0052",
+        "osm_way_id": "694695974",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.904828,
+        "latitude": 38.286008,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.904828470307415,
+          38.2860079232112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0053",
+        "osm_way_id": "694695974",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.923762,
+        "latitude": 38.301891,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.923761979460345,
+          38.30189075131313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0054",
+        "osm_way_id": "694695974",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.906221,
+        "latitude": 38.287614,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.90622059124953,
+          38.28761390094943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0055",
+        "osm_way_id": "694695974",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.916232,
+        "latitude": 38.295733,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.9162317064285,
+          38.29573271507082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0056",
+        "osm_way_id": "695823049",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.74532,
+        "latitude": 38.312501,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.74532024824831,
+          38.31250074679131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0057",
+        "osm_way_id": "695825878",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.899814,
+        "latitude": 38.300033,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.89981425411996,
+          38.300033109593684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0058",
+        "osm_way_id": "695825878",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.901211,
+        "latitude": 38.304384,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.90121144505503,
+          38.30438445283726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0059",
+        "osm_way_id": "695825878",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.899996,
+        "latitude": 38.300882,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.89999581568215,
+          38.30088215373738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0060",
+        "osm_way_id": "695825878",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.899829,
+        "latitude": 38.299663,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.89982938701908,
+          38.299662617762685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0061",
+        "osm_way_id": "695825880",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.897713,
+        "latitude": 38.291064,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.89771326615965,
+          38.2910637044454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0062",
+        "osm_way_id": "695825880",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.900013,
+        "latitude": 38.296818,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.90001250799023,
+          38.29681781312367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0063",
+        "osm_way_id": "695825880",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.896545,
+        "latitude": 38.288202,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.896544534222315,
+          38.288201767020155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0064",
+        "osm_way_id": "695825880",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.900517,
+        "latitude": 38.298582,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.900517083008324,
+          38.29858168972112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0065",
+        "osm_way_id": "695825880",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.900482,
+        "latitude": 38.298124,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.900481657275606,
+          38.29812420085167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0066",
+        "osm_way_id": "695825880",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.900447,
+        "latitude": 38.297932,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.90044710096069,
+          38.297932316558295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0067",
+        "osm_way_id": "695825880",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.899364,
+        "latitude": 38.295167,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.899364465390605,
+          38.29516677227999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0068",
+        "osm_way_id": "695825881",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.898582,
+        "latitude": 38.281467,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.89858236965456,
+          38.28146664265851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0069",
+        "osm_way_id": "695825881",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.897445,
+        "latitude": 38.282683,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.8974454002328,
+          38.282682857483664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0070",
+        "osm_way_id": "695825882",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.888077,
+        "latitude": 38.294319,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.88807734222313,
+          38.29431936622299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0071",
+        "osm_way_id": "695825882",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.890274,
+        "latitude": 38.296913,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.890273903196515,
+          38.29691323427599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0072",
+        "osm_way_id": "695825885",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.881453,
+        "latitude": 38.303037,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.881452750224234,
+          38.30303734011746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0073",
+        "osm_way_id": "695825886",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.865069,
+        "latitude": 38.309417,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.86506903370843,
+          38.30941703408335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0074",
+        "osm_way_id": "695825890",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.867591,
+        "latitude": 38.308261,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.86759051306248,
+          38.308260646614016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0075",
+        "osm_way_id": "695825890",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.868809,
+        "latitude": 38.307303,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.868808722964005,
+          38.30730349357622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0076",
+        "osm_way_id": "695825891",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.865154,
+        "latitude": 38.309365,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.865154337860375,
+          38.30936471053206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0077",
+        "osm_way_id": "695825891",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.864961,
+        "latitude": 38.309417,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.864960936576054,
+          38.309416909691166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0078",
+        "osm_way_id": "695825898",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.868781,
+        "latitude": 38.305906,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.86878076257126,
+          38.305906400615186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0079",
+        "osm_way_id": "695825899",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.865445,
+        "latitude": 38.309147,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.865445332232326,
+          38.30914709377583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0080",
+        "osm_way_id": "695825899",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.865429,
+        "latitude": 38.309149,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.865429252451726,
+          38.30914872693109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0081",
+        "osm_way_id": "695825904",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.870168,
+        "latitude": 38.280046,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.870168200000016,
+          38.28004586549718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0082",
+        "osm_way_id": "695825904",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.869761,
+        "latitude": 38.285359,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.86976064272725,
+          38.285359129766086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0083",
+        "osm_way_id": "695825904",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.870535,
+        "latitude": 38.288668,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.87053486330202,
+          38.288667510396294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0084",
+        "osm_way_id": "695825908",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.883482,
+        "latitude": 38.288481,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.88348188047998,
+          38.28848084615628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0085",
+        "osm_way_id": "695825908",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.880811,
+        "latitude": 38.28545,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.88081075979124,
+          38.285450240977696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0086",
+        "osm_way_id": "695825908",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.877142,
+        "latitude": 38.283745,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.87714235030911,
+          38.28374484940093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0087",
+        "osm_way_id": "695825908",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.878843,
+        "latitude": 38.283217,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.87884269337042,
+          38.28321713499904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0088",
+        "osm_way_id": "695825910",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.875373,
+        "latitude": 38.286717,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.87537319198913,
+          38.28671709409776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0089",
+        "osm_way_id": "695825910",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.854986,
+        "latitude": 38.28004,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.85498639478291,
+          38.280040289065674
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0090",
+        "osm_way_id": "695825910",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.870935,
+        "latitude": 38.284843,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.87093540568789,
+          38.28484274234573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0091",
+        "osm_way_id": "695825910",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.858204,
+        "latitude": 38.281079,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.85820438129138,
+          38.28107934801539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0092",
+        "osm_way_id": "695825910",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.819012,
+        "latitude": 38.271381,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.819012217912075,
+          38.271381208050435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0093",
+        "osm_way_id": "695825911",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.900486,
+        "latitude": 38.298606,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.90048643271542,
+          38.29860579172183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0094",
+        "osm_way_id": "695825911",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.896788,
+        "latitude": 38.297192,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.89678837686455,
+          38.29719245341084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0095",
+        "osm_way_id": "695825911",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.898732,
+        "latitude": 38.297968,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.898731609014945,
+          38.2979675355909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0096",
+        "osm_way_id": "695825911",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.892526,
+        "latitude": 38.295143,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.892525619191964,
+          38.29514287217606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0097",
+        "osm_way_id": "695825911",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.889109,
+        "latitude": 38.293508,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.88910928059292,
+          38.29350805274015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0098",
+        "osm_way_id": "695825914",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.925759,
+        "latitude": 38.307796,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.9257590246263,
+          38.30779643829888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0099",
+        "osm_way_id": "695825914",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.917695,
+        "latitude": 38.305059,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.917695443137276,
+          38.30505944743899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0100",
+        "osm_way_id": "695958393",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.7562,
+        "latitude": 38.28479,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7561997087667,
+          38.284790452510215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0101",
+        "osm_way_id": "695958395",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.763959,
+        "latitude": 38.278164,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.76395914890939,
+          38.27816426783345
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0102",
+        "osm_way_id": "695958406",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.745447,
+        "latitude": 38.273806,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.74544732121216,
+          38.27380599989484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0103",
+        "osm_way_id": "695958406",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.74685,
+        "latitude": 38.281604,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.74685029758568,
+          38.281604025078714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0104",
+        "osm_way_id": "695958406",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.744461,
+        "latitude": 38.271613,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.74446084362514,
+          38.271613461696376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0105",
+        "osm_way_id": "695958406",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.744701,
+        "latitude": 38.272234,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.74470083333251,
+          38.272234197826826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0106",
+        "osm_way_id": "695958409",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.740092,
+        "latitude": 38.287714,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.74009232752108,
+          38.287714094288916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0107",
+        "osm_way_id": "695958410",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.737149,
+        "latitude": 38.286195,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.73714908105137,
+          38.2861945634312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0108",
+        "osm_way_id": "695958410",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.734194,
+        "latitude": 38.301499,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.73419412465365,
+          38.30149866153956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0109",
+        "osm_way_id": "695958415",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.743236,
+        "latitude": 38.301154,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.74323572714359,
+          38.30115412841908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0110",
+        "osm_way_id": "695958416",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.740877,
+        "latitude": 38.295723,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.74087685307189,
+          38.29572294836977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0111",
+        "osm_way_id": "695958418",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.748989,
+        "latitude": 38.287747,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.74898884370255,
+          38.28774709346858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0112",
+        "osm_way_id": "695958418",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.748492,
+        "latitude": 38.288284,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.748492279563436,
+          38.28828378386016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0113",
+        "osm_way_id": "695958420",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.744307,
+        "latitude": 38.293034,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.744307478260076,
+          38.29303430155295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0114",
+        "osm_way_id": "695958448",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.7495,
+        "latitude": 38.287347,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.74949950466939,
+          38.28734678275011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0115",
+        "osm_way_id": "827224862",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.781471,
+        "latitude": 38.269284,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7814713402108,
+          38.2692837250769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0116",
+        "osm_way_id": "827224862",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.781549,
+        "latitude": 38.269493,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.78154885938778,
+          38.269492636403164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0117",
+        "osm_way_id": "827224863",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.781398,
+        "latitude": 38.269611,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.781397618648356,
+          38.26961130762982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0118",
+        "osm_way_id": "827224863",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.784201,
+        "latitude": 38.27741,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.784200906765406,
+          38.277409721174784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0119",
+        "osm_way_id": "827224863",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.784192,
+        "latitude": 38.277385,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.78419217506088,
+          38.27738516526112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0120",
+        "osm_way_id": "827224863",
+        "transport_kind": "highway",
+        "transport_class": "trunk",
+        "longitude": 44.781321,
+        "latitude": 38.269402,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.78132092626376,
+          38.269401747708585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0121",
+        "osm_way_id": "1017531401",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.756984,
+        "latitude": 38.318423,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.756983901821,
+          38.318422874332185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0122",
+        "osm_way_id": "1017531409",
+        "transport_kind": "highway",
+        "transport_class": "tertiary",
+        "longitude": 44.774205,
+        "latitude": 38.316251,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.774204763981814,
+          38.31625106515452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0123",
+        "osm_way_id": "1017531414",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.773786,
+        "latitude": 38.317829,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.77378569594546,
+          38.31782899142289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0124",
+        "osm_way_id": "1017531425",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.76308,
+        "latitude": 38.310679,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.76307960434612,
+          38.310678714914125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0125",
+        "osm_way_id": "1017531440",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.760248,
+        "latitude": 38.315341,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.760248162489525,
+          38.31534083935607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0126",
+        "osm_way_id": "1017531441",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.762133,
+        "latitude": 38.312999,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7621332941013,
+          38.31299912859874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0127",
+        "osm_way_id": "1017531441",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.760854,
+        "latitude": 38.314041,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.76085438879916,
+          38.31404101538511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0128",
+        "osm_way_id": "1017531446",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.759391,
+        "latitude": 38.316806,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.75939149062994,
+          38.31680564483779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0129",
+        "osm_way_id": "1017531451",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.759756,
+        "latitude": 38.31652,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7597557835047,
+          38.31652012580844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0130",
+        "osm_way_id": "1017531688",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.762362,
+        "latitude": 38.311865,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.76236212180532,
+          38.31186465149936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0131",
+        "osm_way_id": "1017531689",
+        "transport_kind": "highway",
+        "transport_class": "residential",
+        "longitude": 44.762279,
+        "latitude": 38.311576,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.76227938140379,
+          38.31157566996159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0132",
+        "osm_way_id": "1160912582",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.781396,
+        "latitude": 38.297683,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.78139617514847,
+          38.29768299531473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0133",
+        "osm_way_id": "1160912583",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.774846,
+        "latitude": 38.303881,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.77484641815297,
+          38.303880525832376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0134",
+        "osm_way_id": "1160912585",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.773661,
+        "latitude": 38.309125,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.77366131139407,
+          38.309125213593994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0135",
+        "osm_way_id": "1160912586",
+        "transport_kind": "highway",
+        "transport_class": "track",
+        "longitude": 44.791434,
+        "latitude": 38.30236,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.79143424009914,
+          38.302359865277694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0136",
+        "osm_way_id": "1434815286",
+        "transport_kind": "railway",
+        "transport_class": "rail",
+        "longitude": 44.930448,
+        "latitude": 38.307167,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.930447590001236,
+          38.30716722176122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "crossing_id": "XING-0137",
+        "osm_way_id": "1434815286",
+        "transport_kind": "railway",
+        "transport_class": "rail",
+        "longitude": 44.928405,
+        "latitude": 38.309885,
+        "drainage_threshold_km2": 1.0,
+        "status": "screening_candidate_not_field_verified",
+        "prohibited_interpretation": "not confirmed flooding damage bridge or culvert"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.92840490293442,
+          38.30988451550783
+        ]
+      }
+    }
+  ]
+}
