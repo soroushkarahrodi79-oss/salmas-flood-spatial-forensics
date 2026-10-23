@@ -1,0 +1,28 @@
+name: Live catalogue audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  query:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Query Sentinel-1 and Sentinel-2 catalogue
+        run: |
+          mkdir -p live-catalogue
+          python scripts/query_cdse_catalog.py --collection sentinel-1-grd --datetime 2026-10-01T00:00:00Z/2026-11-15T00:00:00Z > live-catalogue/sentinel-1.json
+          python scripts/query_cdse_catalog.py --collection sentinel-2-l2a --datetime 2026-10-01T00:00:00Z/2026-11-15T00:00:00Z > live-catalogue/sentinel-2.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: live-catalogue-${{ github.run_id }}
+          path: live-catalogue/
+          retention-days: 30

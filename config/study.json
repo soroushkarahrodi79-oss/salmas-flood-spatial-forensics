@@ -9,18 +9,25 @@
       "start": "2026-10-22T14:30:00+03:30",
       "end": "2026-10-22T20:00:00+03:30",
       "status": "provisional"
+    },
+    "event_window_utc": {
+      "start": "2026-10-22T11:00:00Z",
+      "end": "2026-10-22T16:30:00Z",
+      "status": "provisional_report_timing_envelope"
     }
   },
   "spatial": {
     "catalogue_bbox_wgs84": [44.7, 38.24, 45.0, 38.38],
     "analysis_crs": "EPSG:32638",
     "web_crs": "EPSG:4326",
-    "aoi_rule": "expand_to_validated_upstream_catchments"
+    "aoi_rule": "expand_to_validated_upstream_catchments",
+    "candidate_hydrological_aoi": "outputs/publication/candidate_catchments.geojson",
+    "hydrological_aoi_status": "candidate_unverified_pour_points_not_event_extent"
   },
   "gates": {
     "event_confirmation": "GO",
-    "terrain_analysis": "GO",
-    "precipitation_context": "GO",
+    "terrain_analysis": "GO_TERRAIN_SUSCEPTIBILITY_ONLY",
+    "precipitation_context": "HOLD_VALIDATED_OBSERVATION_REQUIRED",
     "satellite_flood_extent": "HOLD_POST_EVENT_PAIR_REQUIRED",
     "damage_quantification": "HOLD_GROUND_TRUTH_REQUIRED",
     "hydraulic_depth_velocity": "NO_GO_INPUTS_INSUFFICIENT",

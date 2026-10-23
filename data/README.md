@@ -22,5 +22,7 @@ Every acquired input must have:
 6. declared spatial and temporal support;
 7. a statement of what the dataset cannot establish.
 
-Satellite-derived water or change layers must never overwrite raw imagery. Regenerable outputs belong under `data/processed/` or `outputs/` and remain ignored until a publication package is deliberately released.
+Satellite-derived water or change layers must never overwrite raw imagery. Regenerable analytical intermediates remain ignored under `data/processed/`. Only deliberately reviewed, lightweight publication artifacts may be tracked under `outputs/publication/`.
+
+The local machine-readable acquisition log is `data/raw/acquisition_manifest.json`; it is regenerated from validated downloads and excluded from Git. The reviewable inventory in `provenance/acquisition_inventory.csv` records provider, product/version, immutable identifier, exact query or URL, retrieval time, coverage, CRS, resolution, terms, size, SHA-256, analytical role and limitations. The repository MIT license covers code and repository-authored text only; third-party data retain their own terms.
 

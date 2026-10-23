@@ -1,6 +1,8 @@
 # Sensor feasibility gate
 
-**Gate status at inception: PROVISIONAL GO FOR CATALOGUE MONITORING / HOLD FOR FLOOD EXTENT**
+**Current gate status: HOLD_POST_EVENT_PAIR_REQUIRED**
+
+The live Copernicus Data Space STAC audit covered the catalogue-search AOI through `2026-10-23T23:59:59Z`. It returned no post-event Sentinel-1 GRD or Sentinel-2 L2A item. Monitoring may continue, but flood delineation is not authorized. The reviewable result is the observation-gap map in `outputs/publication/satellite_observation_gap.png`.
 
 ## Known pre-event observations
 

@@ -4,12 +4,29 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "salmas-flood-spatial-forensics"
-version = "0.1.0"
+version = "0.2.0"
 description = "Reproducible open spatial forensics for the 22 October 2026 Salmas flash flood"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
 authors = [{name = "Soroush Karahrodi"}]
+
+[project.optional-dependencies]
+analysis = [
+  "arabic-reshaper>=3,<4",
+  "jsonschema>=4.21,<5",
+  "matplotlib>=3.8,<4",
+  "numpy>=1.26,<3",
+  "pyflwdir>=0.5.12,<1",
+  "pyproj>=3.6,<4",
+  "rasterio>=1.3,<2",
+  "requests>=2.31,<3",
+  "shapely>=2,<3",
+  "python-bidi>=0.6,<1",
+]
+
+[project.scripts]
+salmas-validate = "salmas_flood.validation:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

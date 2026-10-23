@@ -1,0 +1,49 @@
+{
+  "assets": [
+    {
+      "asset_id": "COPDEM_GLO30_N38E044_DEM",
+      "provider": "Copernicus Data Space Ecosystem via AWS Open Data",
+      "dataset": "Copernicus DEM GLO-30 2021",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_E044_00_DEM/Copernicus_DSM_COG_10_N38_00_E044_00_DEM.tif",
+      "destination": "data/raw/copdem/Copernicus_DSM_COG_10_N38_00_E044_00_DEM.tif",
+      "role": "primary_terrain",
+      "license_or_terms": "Copernicus DEM GLO-30 free licence; attribution required"
+    },
+    {
+      "asset_id": "COPDEM_GLO30_N38E044_EDM",
+      "provider": "Copernicus Data Space Ecosystem via AWS Open Data",
+      "dataset": "Copernicus DEM GLO-30 Editing Data Mask",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_E044_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N38_00_E044_00_EDM.tif",
+      "destination": "data/raw/copdem/Copernicus_DSM_COG_10_N38_00_E044_00_EDM.tif",
+      "role": "terrain_quality_mask",
+      "license_or_terms": "Copernicus DEM GLO-30 free licence; attribution required"
+    },
+    {
+      "asset_id": "COPDEM_GLO30_N38E044_WBM",
+      "provider": "Copernicus Data Space Ecosystem via AWS Open Data",
+      "dataset": "Copernicus DEM GLO-30 Water Body Mask",
+      "url": "https://copernicus-dem-30m.s3.amazonaws.com/Copernicus_DSM_COG_10_N38_00_E044_00_DEM/AUXFILES/Copernicus_DSM_COG_10_N38_00_E044_00_WBM.tif",
+      "destination": "data/raw/copdem/Copernicus_DSM_COG_10_N38_00_E044_00_WBM.tif",
+      "role": "terrain_water_mask",
+      "license_or_terms": "Copernicus DEM GLO-30 free licence; attribution required"
+    },
+    {
+      "asset_id": "MAPZEN_SKADI_N38E044",
+      "provider": "Mapzen / Linux Foundation via AWS Registry of Open Data",
+      "dataset": "Terrain Tiles v1.1 Skadi",
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N38/N38E044.hgt.gz",
+      "destination": "data/raw/mapzen/N38E044.hgt.gz",
+      "role": "secondary_terrain_sensitivity",
+      "license_or_terms": "Source-dependent open-data attribution; see Tilezen joerd attribution"
+    },
+    {
+      "asset_id": "OSM_TRANSPORT_AOI_20261023",
+      "provider": "OpenStreetMap API",
+      "dataset": "OpenStreetMap transport snapshot",
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=44.72,38.28,44.97,38.35",
+      "destination": "data/raw/osm/aoi.osm",
+      "role": "candidate_infrastructure_crossing_screen",
+      "license_or_terms": "OpenStreetMap data © contributors; ODbL 1.0"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 [![QA](https://github.com/soroushkarahrodi79-oss/salmas-flood-spatial-forensics/actions/workflows/qa.yml/badge.svg)](https://github.com/soroushkarahrodi79-oss/salmas-flood-spatial-forensics/actions/workflows/qa.yml)
 
-**Status: EVENT CONFIRMED / TERRAIN AND RAINFALL WORK AUTHORIZED / SATELLITE FLOOD EXTENT ON HOLD**
+**Status: PHASE 1 HOLD / TERRAIN SUSCEPTIBILITY AVAILABLE / VALIDATED RAINFALL AND SATELLITE FLOOD EXTENT UNAVAILABLE**
 
 This repository is an independent, reproducible reconstruction of the flash-flood event reported in rural Salmas County, West Azerbaijan Province, Iran, on **22 October 2026 (30 Mehr 1405)**.
 
@@ -17,7 +17,9 @@ The project asks:
 - Casualty and dwelling counts evolved during response operations and are preserved as time-stamped claims rather than collapsed into one supposedly final number.
 - A Sentinel-2 acquisition at 07:49 UTC on the event date provides a same-day pre-event baseline.
 - A Sentinel-1 acquisition at 14:52 UTC on 21 October provides a close radar baseline.
-- At repository inception, no comparable post-event Sentinel-1 acquisition had yet been catalogued. No flood polygon is therefore authorized.
+- A live Copernicus catalogue audit through 23 October 2026 found no post-event Sentinel-1 or Sentinel-2 acquisition intersecting the search AOI. No flood polygon is therefore authorized.
+- Reproducible terrain outputs identify modelled runoff pathways and candidate upstream catchments; they are susceptibility evidence, not an observed event extent.
+- The configured IMERG Late Run is credential-gated at the provider and no verified local gauge or pluviograph observation was found. No precipitation accumulation is published.
 
 See [Project scope](docs/PROJECT_SCOPE.md), [Sensor gate](docs/SENSOR_GATE.md), [Methods](docs/METHODS.md), and [Limitations](docs/LIMITATIONS.md).
 
@@ -51,12 +53,17 @@ The analytical area must expand to the upstream catchments derived from validate
 | Path | Function |
 |---|---|
 | `config/study.json` | Machine-readable scope, gates and spatial configuration |
+| `config/terrain.json` | DEM, conditioning, routing and threshold parameters |
+| `config/precipitation.json` | IMERG identity, event timing and accumulation windows |
 | `provenance/source_manifest.csv` | Sources, retrieval state and analytical role |
 | `provenance/claim_register.csv` | Versioned material claims and confidence |
 | `provenance/event_timeline.csv` | Time-stamped event observations |
 | `provenance/catalog_snapshot.csv` | Initial Copernicus catalogue observations |
 | `data/reference/affected_settlements.csv` | Approximate settlement seed coordinates |
 | `scripts/query_cdse_catalog.py` | Re-runnable CDSE STAC catalogue query |
+| `scripts/acquire_data.py` | Idempotent, checksummed acquisition of spatially constrained inputs |
+| `scripts/process_terrain.py` | Reproducible terrain sensitivity and candidate-catchment workflow |
+| `scripts/plot_observation_gap.py` | Publication map of the unresolved satellite-observation gap |
 | `scripts/validate_project.py` | Dependency-free repository QA |
 | `docs/` | Scope, methods, gates and limitations |
 
@@ -68,6 +75,18 @@ Raw satellite imagery, DEMs and other large third-party datasets are not committ
 python scripts/validate_project.py
 python -m unittest discover -s tests -v
 ```
+
+For the full analytical environment:
+
+```bash
+python -m venv .venv
+.venv/bin/python -m pip install -r requirements-analysis.txt
+.venv/bin/python -m pip install -e .
+.venv/bin/python scripts/process_terrain.py
+.venv/bin/python scripts/plot_observation_gap.py
+```
+
+On Windows, replace `.venv/bin/python` with `.venv\\Scripts\\python`.
 
 Query the live Copernicus catalogue without downloading imagery:
 
