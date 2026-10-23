@@ -41,6 +41,15 @@ EXPECTED_HEADERS = {
         "latitude", "geometry_type", "retrieved_utc", "estimated_source_precision_m", "offset_from_adopted_m",
         "adoption_status", "reason",
     ],
+    "provenance/observation_gaps.csv": [
+        "gap_id", "domain", "decision_question", "status", "searched_sources", "last_checked_utc",
+        "opening_criteria", "prohibited_inference",
+    ],
+    "provenance/acquisition_inventory.csv": [
+        "asset_id", "provider", "dataset_version", "immutable_identifier", "exact_query", "asset_reference",
+        "retrieved_utc", "time_coverage", "spatial_coverage", "crs", "resolution", "license_or_access",
+        "size_bytes", "sha256", "role", "limitations",
+    ],
 }
 
 
@@ -104,10 +113,13 @@ def validate_project(root: Path = ROOT) -> None:
     catalogue = read_csv("provenance/catalog_snapshot.csv")
     settlements = read_csv("data/reference/affected_settlements.csv")
     coordinates = read_csv("provenance/settlement_coordinate_observations.csv")
+    gaps = read_csv("provenance/observation_gaps.csv")
+    acquisitions = read_csv("provenance/acquisition_inventory.csv")
     for rows, field, label in [
         (sources, "source_id", "sources"), (claims, "claim_id", "claims"), (timeline, "event_id", "timeline"),
         (catalogue, "snapshot_id", "catalogue"), (settlements, "settlement_id", "settlements"),
         (coordinates, "coordinate_observation_id", "coordinate observations"),
+        (gaps, "gap_id", "observation gaps"), (acquisitions, "asset_id", "acquisitions"),
     ]:
         validate_unique(rows, field, label)
 
@@ -159,6 +171,16 @@ def validate_project(root: Path = ROOT) -> None:
         if row["settlement_id"] not in settlement_ids or row["source_id"] not in source_ids:
             raise ValueError(f"Broken coordinate reference: {row['coordinate_observation_id']}")
         parse_timestamp(row["retrieved_utc"])
+
+    for row in gaps:
+        if not any(row["status"].startswith(prefix) for prefix in vocab["gate_state_prefix"]):
+            raise ValueError(f"Unknown observation-gap status: {row['gap_id']}")
+        parse_timestamp(row["last_checked_utc"])
+
+    for row in acquisitions:
+        parse_timestamp(row["retrieved_utc"])
+        if int(row["size_bytes"]) <= 0 or len(row["sha256"]) != 64:
+            raise ValueError(f"Invalid acquisition checksum metadata: {row['asset_id']}")
 
     item_ids: set[str] = set()
     for row in catalogue:

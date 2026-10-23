@@ -16,13 +16,19 @@ The event was a flash flood. Water may have receded before a post-event acquisit
 
 Thirty-metre elevation data cannot resolve individual streets, walls, drainage structures or water depth around buildings. Hydrological conditioning changes modeled pathways and must be reported.
 
+Candidate pour points are algorithmic screening locations near approximate settlement centroids, not surveyed outlets or confirmed impact sites. The independent Mapzen surface has mixed upstream lineage and is used only as a sensitivity surface. Large changes under its depression-preservation stress test show that some catchments are strongly analyst-choice dependent.
+
 ## Precipitation resolution
 
 Satellite precipitation estimates provide regional context. They cannot establish the peak intensity at a named village without local validation.
 
+IMERG Late Run retrieval returned HTTP 401 without registered provider credentials, and no verified local gauge or pluviograph record was found. Phase 1 therefore contains no rainfall accumulation; absence of a value is an observation gap, not evidence of low rainfall.
+
 ## Exposure data
 
 Open building and road datasets may be incomplete or outdated. Intersections represent potential exposure, not observed damage.
+
+OSM road and railway intersections with modelled drainage are screening candidates only. They do not confirm a bridge, culvert, blockage, overtopping or damage, and no completeness-derived totals are reported.
 
 ## Prohibited shortcuts
 

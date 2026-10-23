@@ -35,6 +35,15 @@
       "destination": "data/raw/mapzen/N38E044.hgt.gz",
       "role": "secondary_terrain_sensitivity",
       "license_or_terms": "Source-dependent open-data attribution; see Tilezen joerd attribution"
+    },
+    {
+      "asset_id": "OSM_TRANSPORT_AOI_20261023",
+      "provider": "OpenStreetMap API",
+      "dataset": "OpenStreetMap transport snapshot",
+      "url": "https://api.openstreetmap.org/api/0.6/map?bbox=44.72,38.28,44.97,38.35",
+      "destination": "data/raw/osm/aoi.osm",
+      "role": "candidate_infrastructure_crossing_screen",
+      "license_or_terms": "OpenStreetMap data © contributors; ODbL 1.0"
     }
   ]
 }

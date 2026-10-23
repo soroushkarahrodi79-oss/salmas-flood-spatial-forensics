@@ -44,3 +44,7 @@ Exposure counting must stop if building or road completeness cannot be character
 
 Hydraulic modelling remains prohibited until event hydrographs or defensible rainfall-runoff inputs, channel geometry, structures and calibration observations are available.
 
+## Phase 1 interpretation boundary
+
+Phase 1 maps modelled topographic susceptibility and observation feasibility. It does not map the flood, its water depth, its damaged buildings or a local design storm. Candidate catchments and transport crossings are hypotheses for field or higher-resolution validation. Any future event-evidence envelope must pass the sensor and exposure gates before it can support receptor counting.
+

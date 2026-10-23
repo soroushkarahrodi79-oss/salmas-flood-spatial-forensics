@@ -11,6 +11,7 @@ import json
 import os
 import subprocess
 import sys
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from importlib.metadata import version
 from pathlib import Path
@@ -26,7 +27,7 @@ from affine import Affine
 from pyproj import Transformer
 from rasterio.features import shapes
 from rasterio.warp import Resampling, reproject, transform_bounds
-from shapely.geometry import mapping, shape
+from shapely.geometry import LineString, Point, mapping, shape
 from shapely.ops import transform as geometry_transform, unary_union
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -135,6 +136,60 @@ def geojson_feature(geometry, properties: dict, transformer: Transformer) -> dic
     return {"type": "Feature", "properties": properties, "geometry": mapping(projected)}
 
 
+def load_osm_transport(path: Path, transformer: Transformer) -> list[tuple[str, str, str, LineString]]:
+    root = ET.parse(path).getroot()
+    nodes = {node.attrib["id"]: (float(node.attrib["lon"]), float(node.attrib["lat"])) for node in root.findall("node")}
+    features = []
+    for way in root.findall("way"):
+        tags = {tag.attrib["k"]: tag.attrib["v"] for tag in way.findall("tag")}
+        kind = "railway" if "railway" in tags else "highway" if "highway" in tags else None
+        if kind is None:
+            continue
+        refs = [item.attrib["ref"] for item in way.findall("nd")]
+        coordinates = [nodes[ref] for ref in refs if ref in nodes]
+        if len(coordinates) < 2:
+            continue
+        metric_coordinates = [transformer.transform(lon, lat) for lon, lat in coordinates]
+        features.append((way.attrib["id"], kind, tags.get(kind, "unknown"), LineString(metric_coordinates)))
+    return features
+
+
+def infrastructure_crossings(primary: dict, transport_path: Path, to_metric: Transformer, to_wgs84: Transformer, threshold_km2: float) -> tuple[list[dict], list[dict]]:
+    stream_features = primary["flow"].streams(mask=primary["products"]["upstream_area_km2"] >= threshold_km2)
+    network = unary_union([shape(feature["geometry"]) for feature in stream_features])
+    rows, features, seen = [], [], set()
+    for way_id, kind, road_class, line in load_osm_transport(transport_path, to_metric):
+        intersection = line.intersection(network)
+        if intersection.is_empty:
+            continue
+        points = []
+        if intersection.geom_type == "Point":
+            points = [intersection]
+        elif intersection.geom_type == "MultiPoint":
+            points = list(intersection.geoms)
+        elif intersection.geom_type in {"LineString", "MultiLineString"}:
+            points = [intersection.centroid]
+        elif intersection.geom_type == "GeometryCollection":
+            points = [item for item in intersection.geoms if item.geom_type == "Point"]
+        for point in points:
+            dedupe_key = (way_id, round(point.x / 30), round(point.y / 30))
+            if dedupe_key in seen:
+                continue
+            seen.add(dedupe_key)
+            lon, lat = to_wgs84.transform(point.x, point.y)
+            record = {
+                "crossing_id": f"XING-{len(rows) + 1:04d}", "osm_way_id": way_id,
+                "transport_kind": kind, "transport_class": road_class,
+                "longitude": round(lon, 6), "latitude": round(lat, 6),
+                "drainage_threshold_km2": threshold_km2,
+                "status": "screening_candidate_not_field_verified",
+                "prohibited_interpretation": "not confirmed flooding damage bridge or culvert",
+            }
+            rows.append(record)
+            features.append({"type": "Feature", "properties": record, "geometry": mapping(Point(lon, lat))})
+    return rows, features
+
+
 def make_figure(publication_dir: Path, primary: dict, settlements: list[dict[str, str]], transform: Affine, commit: str) -> None:
     import matplotlib.pyplot as plt
     from bidi.algorithm import get_display
@@ -235,7 +290,9 @@ def main() -> int:
                 uncertainty = float(settlement["coordinate_uncertainty_m"])
                 rr, cc = np.indices(basin.shape)
                 nearby = np.hypot((rr - point.row) * abs(transform.e), (cc - point.col) * transform.a) <= uncertainty
-                stream_nearby = nearby & (products["upstream_area_km2"] >= 0.5)
+                stream_nearby = nearby & (
+                    products["upstream_area_km2"] >= float(config["pour_point_minimum_drainage_area_km2"])
+                )
                 areas = products["upstream_area_km2"][stream_nearby]
                 record = {
                     "settlement_id": settlement["settlement_id"], "dem_source": source["id"], "conditioning": scenario["id"],
@@ -286,6 +343,19 @@ def main() -> int:
     (publication_dir / "terrain_quality_summary.json").write_text(json.dumps(quality, indent=2) + "\n", encoding="utf-8")
     commit = subprocess.check_output(["git", "rev-parse", "--short=12", "HEAD"], cwd=ROOT, text=True).strip()
     primary = scenario_results["COPDEM_GLO30_N38E044__fill_all_depressions"]
+    crossing_rows, crossing_features = infrastructure_crossings(
+        primary,
+        ROOT / "data/raw/osm/aoi.osm",
+        to_metric,
+        to_wgs84,
+        float(config["pour_point_minimum_drainage_area_km2"]),
+    )
+    with (publication_dir / "candidate_infrastructure_crossings.csv").open("w", encoding="utf-8", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=list(crossing_rows[0]) if crossing_rows else ["crossing_id"])
+        writer.writeheader(); writer.writerows(crossing_rows)
+    (publication_dir / "candidate_infrastructure_crossings.geojson").write_text(
+        json.dumps({"type": "FeatureCollection", "features": crossing_features}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     if not args.skip_figure:
         make_figure(publication_dir, primary, settlements, transform, commit)
     config_hashes = {str(path.relative_to(ROOT)).replace("\\", "/"): sha256_file(path) for path in sorted((ROOT / "config").glob("*.json"))}
